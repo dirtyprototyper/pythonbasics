@@ -1,40 +1,306 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css" />
+	<link rel="stylesheet" href="dist/reveal.css" />
+	<link rel="stylesheet" href="dist/theme/black.css" />
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!--page 1-->
+			<section>Python Basics</section>
+			<!--page2-->
+			<section>
+				<section>
+					<h2>Background</h2>
+					<p> Guido van Rossum<br> released in 1991</p>
+					<a href="#" class="navigate-down">
+						<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238"
+							data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+					</a>
+				</section>
+				<section>
+					<h2>Uses</h2>
+					<ul>
+						<li>Creae Web applications.</li>
+						<li>Create Workflows</li>
+						<li>Connect to Database</li>
+						<li>Handle Big Data and Perform Complex Mathematics.</li>
+						<li>
+							Rapid prototyping or for production-ready software development.
+						</li>
+					</ul>
+					<a href="#/2">
+						<img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);"
+							width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
+					</a>
+				</section>
+			</section>
+			<!--page3-->
+			<section>
+				<section>
+					<h2>Commonly Used Data Types</h2>
+					<ul>
+						<li>Text: string</li>
+						<li>Numbers: int, float</li>
+						<li>Sequence: list</li>
+						<li>Mapping: dict</li>
+						<li>Boolean:bool</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-animation">Example</h2>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							#string
+							x = "a random string"
+							
+							#int
+							y = 5
+							
+							#float
+							pie = 3.15
+							
+							#list
+							mylist = ["apple", "banana", "cherry"]
+
+							#dictionary
+							x = {"name" : "John", "age" : 36}
+							
+							#boolean
+							covid = false
+					</code></pre>
+
+				</section>
+			</section>
+			<!--page 4-->
+			<section>
+				<section>
+					<h2> if else</h2>
+					<p>Support the use of logical conditional statement </p>
+				</section>
+				<section>
+					<ul> Logical condition
+						<li>Equal: <span style="color:red;"> a == b </span> </li>
+						<li>Not Equal: <span style="color:red;"> a != b </span></li>
+						<li>Less than: <span style="color:red;"> a < b </span>
+						</li>
+						<li>Less Than or Equal To: <span style="color:red;"> a <= b </span>
+						</li>
+						<li>Greater than: <span style="color:red;"> a > b </span> </li>
+						<li>Greater Than or Equal To: <span style="color:red;"> a >= b </span></li>
+					</ul>
+				</section>
+				<section>
+
+					<p>elif: If the previous condition were not true, try this condition </p>
+					<p>else: Anything that were not caught by the preceding conditions </p>
+				</section>
+				<section>
+					<h2>Example </h2>
+					<pre data-id="code-animation">
+						<p class="fragment fade-in-then-semi-out">
+							today = "Saturday"
+						</p>
+						<p class="fragment fade-in-then-semi-out">	
+							today = "Home-Based Learning"
+							<br>
+							<!-- </p> 
+						<p class="fragment fade-in-then-semi-out">	 -->
+							tomorrow = "Public Holiday" 
+						</p>
+						<p class="fragment fade-in-then-semi-out">	
+							yesterday = "Friday"
+						</p>
+
+						<code  class="hljs" data-trim data-line-numbers>
+						if today == "Saturday":
+							print("No School")
+						
+						elif today == "Sunday" or tomorrow == "Public Holiday":
+							print("No School")
+						
+						else:
+							print("Going To School")
+						
+					</code>
+					</pre>
+				</section>
+			</section>
+			<!--page 5-->
+			<section>
+				<section>
+					<h2>Array</h2>
+					<p>
+						Array can hold many values under a name.
+						We can access the value by refering to the index
+					</p>
+				</section>
+				<section>
+					<h2>Example </h2>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							#declaring array
+							cars = ["Ford", "Volvo", "BMW"]
+							x = cars[0]
+							print(x)
+
+							# Adding item to the array 
+							cars.append("Honda")
+
+							# Removing elements to the array
+							cars.pop(4)
+							cars.remove("Honda")
+						</code>
+						</pre>
+				</section>
+			</section>
+			<!--page 6-->
+			<section>
+				<section>
+					<h2>For Loop</h2>
+					<p>To iterating over a sequence <br> (that is either a list, dictionary,string) </p>
+				</section>
+				<section>
+					<h2>Example</h2>
+					<pre data-id="code-animation">
+					<code class="hljs" data-trim data-line-numbers>
+						for x in range(3):
+							#print from 0 to 2	
+							print (x) 
+
+						for x in range(2,6):
+							#print from 2 to 5	
+							print(x)
+
+						cars = ["Ford", "Volvo", "BMW"]
+						for x in cars:
+							print(x)
+						
+					</code>
+					</pre>
+				</section>
+
+			</section>
+			<!-- page 7-->
+			<section>
+				<section>
+					<h2> Dictionary</h2>
+					<p>Dictionary are used to store data in key:value pairs </p>
+					<p>Collection which is ordered, changeable and does not allow duplicate
+
+					</p>
+				</section>
+				<section>
+					<h2>Example </h2>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							#declaring a dictionary
+
+							thisAppleProduct =	{
+								"brand": "Apple",
+								"type": "Macbook",
+								"year": 2013
+								"year": 2015
+								"color": ["grey", "pink","light grey"]
+							}
+							
+							print(thisAppleProduct["year"]) #returns 2015
+						
+							print(thisAppleProduct.keys())  #returns all the keys
+							print(thisAppleProduct.values())  #returns all the value
+													  
+							#changing specific values
+							thisAppleProduct["type"] = "IPhone"
+							print(thisAppleProduct["type"]) #return IPhone
+ 						
+						</code></pre>
+				</section>
+				<section>
+					<h2>Example</h2>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							thisAppleProduct =	{
+								"brand": "Apple",
+								"type": "Macbook",
+								"year": 2015
+								"color": ["grey", "pink","light grey"]
+							}
+
+							thisAppleProduct["type"] = "MacbookPro" #changing the value of the key "type"
+
+							del thisAppleProduct["year"] #deleting the key & value of dictionary
+							
+							thisAppleProduct["year"] = 2020 #adding key & value to the dictionary
+						</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Functions</h2>
+					<p>Block of code that runs only when called </p>
+					<p>Call pass data, known as parameters into the function </p>
+					<p>Can return the result from the function</p>
+				</section>
+				<section>
+					<h2>Example</h2>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers="|1-15|16-21" >
+							<script type="text/template">
+						number1 = 2
+						number2 = 3
+						total = 0
+
+						def sum(num1, num2):
+							total = num1 + num2
+
+						sum(number1, number2)	
+						print(total) # Is this 0 or 5?
+
+
+
+
+
+						
+						def sum(num1, num2):
+							total = num1 + num2	
+							return total	
+
+						sum(number1, number2)	
+						print(total)						
+							</script>	</code></pre>
+				</section>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+		});
+	</script>
+</body>
+
 </html>
