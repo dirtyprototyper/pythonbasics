@@ -186,27 +186,32 @@ Cover topics: class <->> objects
 			<!--page 5-->
 			<section>
 				<section>
-					<h2>Array</h2>
+					<h2>List</h2>
 					<p>
-						Array can hold many values under a name.
-						We can access the value by refering to the index
+						Array can hold many values under a single varaible.
+						List are ordered and allow duplicate value
 					</p>
 				</section>
 				<section>
 					<h2>Example </h2>
 					<pre data-id="code-animation">
 						<code class="hljs" data-trim data-line-numbers>
-							#declaring array
-							cars = ["Ford", "Volvo", "BMW"]
-							x = cars[0]
-							print(x)
+							#declaring List
+							thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+							print(thislist[1])
+							print(thislist[-1])
+							print(thislist[2:4])
+							print(thislist[-2:-4])
 
-							# Adding item to the array 
-							cars.append("Honda")
+
+							# Adding item to the list 
+							thislist.append("mango")
+							thislist.insert(1, "orange")
+
 
 							# Removing elements to the array
-							cars.pop(4)
-							cars.remove("Honda")
+							thislist.remove("cherry")
+							thislist.pop(1)
 						</code>
 						</pre>
 				</section>
