@@ -118,7 +118,7 @@ mylist = ["chocolate", "apple", "soda"]
 
 def shopping(grocerylist):
     for x in grocerylist:
-        print(X)	
+        print(x)	
 
 shopping(mylist)
 
