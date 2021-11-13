@@ -95,6 +95,19 @@ Cover topics: class <->> objects
 			<!--page3-->
 			<section>
 				<section>
+					<h2>Variable</h2>
+					<p>
+						Declare variable by assigning a value to label.
+						Note: variables are case sensitives and you cannot start variable name with a number
+					</p>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							_myname = "Khang hou"	
+						</code>
+							</pre>
+				</section>
+
+				<section>
 					<h2>Commonly Used Data Types</h2>
 					<ul>
 						<li>Text: string</li>
@@ -109,8 +122,9 @@ Cover topics: class <->> objects
 					<pre data-id="code-animation">
 						<code class="hljs" data-trim data-line-numbers>
 							#string
-							x = "a random string"
-							
+							x = "a" + "random string"
+							print(x[3])  #guess this value
+
 							#int
 							y = 5
 							
@@ -125,10 +139,47 @@ Cover topics: class <->> objects
 							
 							#boolean
 							covid = False
+
+							#checking datatype
+							type(covid)
 					</code></pre>
 
 				</section>
 			</section>
+
+			<!--page 3.5-->
+			<section>
+				<section>
+					<h2>Terminology</h2>
+					<p> Expression VS Statement </p>
+				</section>
+
+
+				<section>
+					<h2>Expression</h2>
+					<p>combination of value, variables, operators and calls to function</p>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							print(1 + 1)
+							print(len("hello"))
+						</code>	
+					</pre>
+				</section>
+
+				<section>
+					<h2>Statement</h2>
+					<p>instructions that python intrepreter can execute </p>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							pi = 3.14
+						</code>	
+					</pre>
+				</section>
+
+
+
+			</section>
+
 			<!--page 4-->
 			<section>
 				<section>
@@ -183,6 +234,9 @@ Cover topics: class <->> objects
 					</pre>
 				</section>
 			</section>
+
+
+
 			<!--page 5-->
 			<section>
 				<section>
@@ -243,6 +297,8 @@ Cover topics: class <->> objects
 				</section>
 
 			</section>
+
+
 			<!-- page 7-->
 			<section>
 				<section>
