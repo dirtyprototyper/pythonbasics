@@ -1,3 +1,12 @@
+<!--this html contains information on python. 
+It is not extensive and does not cover everything about python. 
+-->
+<!-- to do:
+increase details for function.
+Cover topics: class <->> objects
+-->
+
+
 <!DOCTYPE html>
 <html>
 
@@ -20,16 +29,25 @@
 	<div class="reveal">
 		<div class="slides">
 			<!--page 1-->
-			<section>Python Basics</section>
+			<section>Intro to Python</section>
 			<!--page2-->
 			<section>
 				<section>
-					<h2>Background</h2>
-					<p> Guido van Rossum<br> released in 1991</p>
-					<a href="#" class="navigate-down">
+					<h2>Python</h2>
+					<ul>
+						<li>High-level programming language</li>
+						<li>Created by Guido van Rossum </li>
+						<li>First released in 1991</li>
+						<li>Latest version: 3.10, released in 2021-10-04</li>
+					</ul>
+					<!-- <a href="#" class="navigate-down">
 						<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238"
 							data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
-					</a>
+					</a> -->
+				</section>
+				<section>
+					<h3>Top Programming Language 2021</h3>
+					<img src="assests/ieee.png">
 				</section>
 				<section>
 					<h2>Uses</h2>
@@ -42,10 +60,36 @@
 							Rapid prototyping or for production-ready software development.
 						</li>
 					</ul>
-					<a href="#/2">
+					<!-- <a href="#/2">
 						<img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);"
 							width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
-					</a>
+					</a> -->
+				</section>
+				<section>
+					<h2>Where to code?</h2>
+					<p>
+						Jupyter Notebook / Google Colaboratory: web-based application that allows you to edit and run
+						Python programs via your
+						favourite browser.
+
+					</p>
+					<img src="assests/jupyter.png">
+					<img src="assests/colab.png">
+
+				</section>
+
+				<section>
+					<h2>Where to code?</h2>
+					<p>
+						Basic Text Editor and Command line
+					</p>
+					<p>
+						Notepad++, Sublime Text3 and Visual Studio Code
+					</p>
+					<img src="assests/notepad.png" style="max-width: 26.5%;">
+					<img src="assests/sublime.png" style="max-width: 20%;">
+					<img src="assests/vscode.jfif" style="max-width: 20%;">
+
 				</section>
 			</section>
 			<!--page3-->
@@ -150,10 +194,10 @@
 			<!--page 5-->
 			<section>
 				<section>
-					<h2>Array</h2>
+					<h2>List</h2>
 					<p>
-						Array can hold many values under a name.
-						We can access the value by refering to the index
+						Array can hold many values under a single varaible.
+						List are ordered and allow duplicate value
 					</p>
 				</section>
 				<section>
@@ -169,15 +213,21 @@
 							#declaring array
 							cars = ["Ford", "Volvo", "BMW"]
 							print(cars[0])
+						<code class="hljs" data-trim data-line-numbers>
+							#declaring List
+							thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+							print(thislist[1])
+							print(thislist[-1])
+							print(thislist[2:4])
+							print(thislist[-2:-4])
 
-							# Adding item to the array 
-							cars.append("Honda")
+							# Adding item to the list 
+							thislist.append("mango")
+							thislist.insert(1, "orange")
 
 							# Removing elements to the array
-							cars.pop(0)
-							# An alternate way of removing an item from an array
-							# cars.remove("Ford")
-							print(cars[0])
+							thislist.remove("cherry")
+							thislist.pop(1)
 						</code>
 						</pre>
 				</section>
@@ -278,7 +328,7 @@
 						</code></pre>
 				</section>
 			</section>
-
+			<!--page 8-->
 			<section>
 				<section>
 					<h2>Functions</h2>
@@ -287,7 +337,25 @@
 					<p>Can return the result from the function</p>
 				</section>
 				<section>
-					<h2>Example</h2>
+					<h2>Example 1:Basic Function</h2>
+					<pre data-id="code-animation">
+					<code class="hljs" data-trim data-line-numbers="1-8|9-10" >
+						x = "parameter"
+						y = "arguments"
+
+						def my_function (arg1, arg2):
+							#refer to the arguments according to what you called it as in the parameters
+							print(arg1 + " is the same as " + y)
+						
+
+						#to invoke the function
+						my_function(x,y)
+						</code>
+						</pre>
+
+				</section>
+				<section>
+					<h2>Example 2:Scope</h2>
 					<pre data-id="code-animation">
 						<code class="hljs" data-trim data-line-numbers="|1-15|16-21" >
 							<script type="text/template">
@@ -314,6 +382,106 @@
 						print(total)						
 							</script>	</code></pre>
 				</section>
+
+				<section>
+					<h2>Example 3:List as argument</h2>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers="" >
+
+							mylist = ["chocolate", "apple", "soda"]
+
+							def shopping(grocerylist):
+								for x in grocerylist:
+									print(X)	
+							
+							shopping(mylist)
+						</code>
+
+							</pre>
+				</section>
+			</section>
+			<!--page 9-->
+			<section>
+				<section>
+					<h2>Class</h2>
+					<p>
+						Class is an Object Constructor <br>
+						"Blueprint" for creating object.<br>
+					</p>
+					<p>
+						Class can be understood as a Template
+						<br>
+						Copying from friend's homework
+					</p>
+				</section>
+
+				<section>
+					<h2>Object</h2>
+					<p>
+						Object is whatever that haven been created based on Class.
+					</p>
+					<p>
+						your homework that is copied from your friend.
+					</p>
+				</section>
+
+				<section>
+					<h2>Example1</h2>
+					<pre data-id="code-animation">
+						<code class ="hljs" data-trim data-line-numbers="">
+							#defining a class
+							class Human:
+								eye = 2,
+								hair = "black"
+							
+							#creating the object
+							Adam = Human()
+
+							#hair is known as property
+							print(Adam.hair) #return black
+
+							#changing the property value 
+							Adam.hair = "blonde"
+							print(Adam.hair) #return blonde
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h2>Example2</h2>
+					<pre data-id="code-animation">
+						<code class ="hljs" data-trim data-line-numbers="3-5">
+							class Human:
+								#assign value for name and age accordingly
+								def __init__(self, name, age):
+								self.name = name
+								self.age = age
+							
+							person = Human("John",21)
+							print(person.name)
+							</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Example3</h2>
+					<pre data-id="code-animation">
+						<code class ="hljs" data-trim data-line-numbers="7-8,10">
+							class Human:
+								#assign value for name and age accordingly
+								def __init__(self, name, age):
+								self.name = name
+								self.age = age
+
+								def Greetings():
+									print("hello there")
+							
+							person = Human()
+							person.Greetings()
+
+						</code>
+					</pre>
+				</section>
+
 			</section>
 		</div>
 	</div>
