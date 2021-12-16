@@ -34,7 +34,7 @@
 				<section>
 					<h2>Uses</h2>
 					<ul>
-						<li>Creae Web applications.</li>
+						<li>Create Web applications.</li>
 						<li>Create Workflows</li>
 						<li>Connect to Database</li>
 						<li>Handle Big Data and Perform Complex Mathematics.</li>
@@ -53,11 +53,11 @@
 				<section>
 					<h2>Commonly Used Data Types</h2>
 					<ul>
-						<li>Text: string</li>
-						<li>Numbers: int, float</li>
-						<li>Sequence: list</li>
-						<li>Mapping: dict</li>
-						<li>Boolean:bool</li>
+						<li>Text: string - "Hello there"</li>
+						<li>Numbers: int, float - 69</li>
+						<li>Sequence: list - [1, 2, 3]</li>
+						<li>Mapping: dict - {name: "Bobby"}</li>
+						<li>Boolean: bool - True</li>
 					</ul>
 				</section>
 				<section data-auto-animate>
@@ -80,7 +80,7 @@
 							x = {"name" : "John", "age" : 36}
 							
 							#boolean
-							covid = false
+							covid = False
 					</code></pre>
 
 				</section>
@@ -89,7 +89,7 @@
 			<section>
 				<section>
 					<h2> if else</h2>
-					<p>Support the use of logical conditional statement </p>
+					<p>Support the use of logical conditional statements </p>
 				</section>
 				<section>
 					<ul> Logical condition
@@ -104,7 +104,7 @@
 					</ul>
 				</section>
 				<section>
-
+					<p>if: Checks if the first condition is true </p>
 					<p>elif: If the previous condition were not true, try this condition </p>
 					<p>else: Anything that were not caught by the preceding conditions </p>
 				</section>
@@ -114,6 +114,9 @@
 						<p class="fragment fade-in-then-semi-out">
 							today = "Saturday"
 						</p>
+						<p class="fragment fade-in-then-semi-out">
+							Output: "No School"
+						</p>
 						<p class="fragment fade-in-then-semi-out">	
 							today = "Home-Based Learning"
 							<br>
@@ -121,17 +124,22 @@
 						<p class="fragment fade-in-then-semi-out">	 -->
 							tomorrow = "Public Holiday" 
 						</p>
-						<p class="fragment fade-in-then-semi-out">	
-							yesterday = "Friday"
+						<p class="fragment fade-in-then-semi-out">
+							Output: "No School"
 						</p>
-
-						<code  class="hljs" data-trim data-line-numbers>
+						<p class="fragment fade-in-then-semi-out">	
+							today = "Monday"
+							<br>
+							tomorrow = "Weekday"
+						</p>
+						<p class="fragment fade-in-then-semi-out">
+							Output: "Going to School"
+						</p>
+						<code class="hljs" data-trim data-line-numbers>
 						if today == "Saturday":
 							print("No School")
-						
 						elif today == "Sunday" or tomorrow == "Public Holiday":
 							print("No School")
-						
 						else:
 							print("Going To School")
 						
@@ -151,18 +159,25 @@
 				<section>
 					<h2>Example </h2>
 					<pre data-id="code-animation">
-						<code class="hljs" data-trim data-line-numbers>
+						<p class="fragment fade-in-then-semi-out">
+							Output: "Ford"
+						</p>
+						<p class="fragment fade-in-then-semi-out">
+							Output: "Volvo"
+						</p>
+						<code class="hljs" data-line-numbers data-trim>
 							#declaring array
 							cars = ["Ford", "Volvo", "BMW"]
-							x = cars[0]
-							print(x)
+							print(cars[0])
 
 							# Adding item to the array 
 							cars.append("Honda")
 
 							# Removing elements to the array
-							cars.pop(4)
-							cars.remove("Honda")
+							cars.pop(0)
+							# An alternate way of removing an item from an array
+							# cars.remove("Ford")
+							print(cars[0])
 						</code>
 						</pre>
 				</section>
@@ -171,25 +186,22 @@
 			<section>
 				<section>
 					<h2>For Loop</h2>
-					<p>To iterating over a sequence <br> (that is either a list, dictionary,string) </p>
+					<p>To iterating over a sequence that is either a list, dictionary or string </p>
 				</section>
 				<section>
 					<h2>Example</h2>
 					<pre data-id="code-animation">
-					<code class="hljs" data-trim data-line-numbers>
-						for x in range(3):
-							#print from 0 to 2	
-							print (x) 
+						<code class="hljs" data-trim data-line-numbers="1-2|4-5|8-9">
+							for x in range(3):
+								print (x) 
 
-						for x in range(2,6):
-							#print from 2 to 5	
-							print(x)
+							for x in range(2,6):
+								print(x)
 
-						cars = ["Ford", "Volvo", "BMW"]
-						for x in cars:
-							print(x)
-						
-					</code>
+							cars = ["Ford", "Volvo", "BMW"]
+							for x in cars:
+								print(x)
+						</code>
 					</pre>
 				</section>
 
@@ -198,29 +210,27 @@
 			<section>
 				<section>
 					<h2> Dictionary</h2>
-					<p>Dictionary are used to store data in key:value pairs </p>
-					<p>Collection which is ordered, changeable and does not allow duplicate
-
-					</p>
+					<p>Dictionary are used to store data in key-value pairs </p>
+					<p>A collection which is ordered, changeable and does not allow duplicates</p>
 				</section>
 				<section>
 					<h2>Example </h2>
 					<pre data-id="code-animation">
 						<code class="hljs" data-trim data-line-numbers>
-							#declaring a dictionary
+							# declaring a dictionary
 
-							thisAppleProduct =	{
+							thisAppleProduct = {
 								"brand": "Apple",
 								"type": "Macbook",
-								"year": 2013
-								"year": 2015
+								"year": 2013,
+								"year": 2015,
 								"color": ["grey", "pink","light grey"]
 							}
 							
-							print(thisAppleProduct["year"]) #returns 2015
+							print(thisAppleProduct["year"]) # returns 2015
 						
-							print(thisAppleProduct.keys())  #returns all the keys
-							print(thisAppleProduct.values())  #returns all the value
+							print(thisAppleProduct.keys())  # returns all the keys
+							print(thisAppleProduct.values())  # returns all the value
 													  
 							#changing specific values
 							thisAppleProduct["type"] = "IPhone"
@@ -231,6 +241,27 @@
 				<section>
 					<h2>Example</h2>
 					<pre data-id="code-animation">
+						
+						<p class="fragment fade-in-then-semi-out" data-transition="zoom-in fade-out">
+							<code class="hljs" data-trim data-line-numbers>
+								thisAppleProduct =	{
+									"brand": "Apple",
+									"type": "Macbook",
+									"year": 2015
+									"color": ["grey", "pink","light grey"]
+								}
+							</code>
+						</p>
+						<p class="fragment fade-in-then-semi-out" data-transition="zoom-in fade-out">
+							<code class="hljs" data-trim data-line-numbers>
+								thisAppleProduct =	{
+									"brand": "Apple",
+									"type": "Macbook",
+									"year": 9999
+									"color": ["grey", "pink","light grey"]
+								}
+							</code>
+						</p>
 						<code class="hljs" data-trim data-line-numbers>
 							thisAppleProduct =	{
 								"brand": "Apple",
@@ -239,11 +270,11 @@
 								"color": ["grey", "pink","light grey"]
 							}
 
-							thisAppleProduct["type"] = "MacbookPro" #changing the value of the key "type"
+							thisAppleProduct["type"] = "MacbookPro" # changing the value of the key "type"
 
-							del thisAppleProduct["year"] #deleting the key & value of dictionary
+							del thisAppleProduct["year"] # deleting the key & value of dictionary
 							
-							thisAppleProduct["year"] = 2020 #adding key & value to the dictionary
+							thisAppleProduct["year"] = 2020 # adding key & value to the dictionary
 						</code></pre>
 				</section>
 			</section>
@@ -252,7 +283,7 @@
 				<section>
 					<h2>Functions</h2>
 					<p>Block of code that runs only when called </p>
-					<p>Call pass data, known as parameters into the function </p>
+					<p>Passes data, known as parameters into the function </p>
 					<p>Can return the result from the function</p>
 				</section>
 				<section>
