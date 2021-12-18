@@ -52,7 +52,7 @@ Cover topics: class <->> objects
 				<section>
 					<h2>Uses</h2>
 					<ul>
-						<li>Create Web applications.</li>
+						<li>Create Web applications (e.g. Netflix, Uber, Dropbox)</li>
 						<li>Create Workflows</li>
 						<li>Connect to Database</li>
 						<li>Handle Big Data and Perform Complex Mathematics.</li>
@@ -65,7 +65,7 @@ Cover topics: class <->> objects
 							width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
 					</a> -->
 				</section>
-				<section>
+				<!-- <section>
 					<h2>Where to code?</h2>
 					<p>
 						Jupyter Notebook / Google Colaboratory: web-based application that allows you to edit and run
@@ -76,7 +76,7 @@ Cover topics: class <->> objects
 					<img src="assests/jupyter.png">
 					<img src="assests/colab.png">
 
-				</section>
+				</section> -->
 
 				<section>
 					<h2>Where to code?</h2>
@@ -84,7 +84,7 @@ Cover topics: class <->> objects
 						Basic Text Editor and Command line
 					</p>
 					<p>
-						Notepad++, Sublime Text3 and Visual Studio Code
+						Notepad++, Sublime Text 3 and Visual Studio Code
 					</p>
 					<img src="assests/notepad.png" style="max-width: 26.5%;">
 					<img src="assests/sublime.png" style="max-width: 20%;">
@@ -95,66 +95,244 @@ Cover topics: class <->> objects
 			<!--page3-->
 			<section>
 				<section>
+					<h2>Variable</h2>
+					<img src="assests/namestand.png" style="max-width:20%"/>
+					<p>
+						Declare variable by assigning a value to label.
+						<br>
+						Note: variables are case-sensitive and you cannot start variable name with a number
+					</p>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							my_name = "Khang Hou"	
+							MY_NAME = "Khang Hou" # Different variable than above
+							1clap2clap = "Clap" # Python will throw an error
+						</code>
+					</pre>
+				</section>
+
+				<section>
 					<h2>Commonly Used Data Types</h2>
 					<ul>
 						<li>Text: string - "Hello there"</li>
 						<li>Numbers: int, float - 69</li>
+						<li>Boolean: bool - True or False</li>
 						<li>Sequence: list - [1, 2, 3]</li>
 						<li>Mapping: dict - {name: "Bobby"}</li>
-						<li>Boolean: bool - True</li>
 					</ul>
 				</section>
 				<section data-auto-animate>
 					<h2 data-id="code-animation">Example</h2>
 					<pre data-id="code-animation">
-						<code class="hljs" data-trim data-line-numbers>
-							#string
-							x = "a random string"
-							
+						<code data-trim data-line-numbers>
+							# string
+							x = "a" + "random string" # Output: "arandom string"
+							print(x[3]) # guess this value
+
 							#int
 							y = 5
 							
 							#float
 							pie = 3.15
 							
+							#boolean
+							covid = False
+
+							#checking datatype
+							type(covid)
+
 							#list
 							mylist = ["apple", "banana", "cherry"]
 
 							#dictionary
 							x = {"name" : "John", "age" : 36}
 							
-							#boolean
-							covid = False
 					</code></pre>
 
 				</section>
+				<section>
+					<h2>Summary</h2>
+					<p>
+						strings - denoted by double or single quotes (" " or ' ')
+						<br>
+						numbers - denoted by numbers
+						<br>
+						booleans - denoted by either a True or False
+						<br>
+						lists - denoted by square brackets with zero or more elements inside
+						<br>
+						dictionaries - denoted by curly braces, with string and value pairs
+					</p>
+				</section>
 			</section>
+			<!-- Operators -->
+			<section>
+
+				<section>
+					<h2>Operators</h2>
+					<p> + is add </p>
+					<p> - is minus </p>
+					<p> * is multiply </p>
+					<p> / is divide </p>
+				</section>
+
+				<section>
+					<h2>+</h2>
+					<p>Adding numbers</p>
+					<pre data-id="code-animation">
+						<code data-trim data-line-numbers>
+							1 + 1 # Output: 2
+							169 + 420 # Output: ?
+						</code>	
+					</pre>
+
+					<p>Concatenating strings</p>
+					<pre data-id="code-animation">
+						<code data-trim data-line-numbers>
+							"rain" + "bow" # Output: rainbow
+							"You are " + str(3) + " years old today" # Python only accepts concatenation between strings. 
+						</code>	
+					</pre>
+				</section>
+
+				<section>
+					<h2>-</h2>
+					<p>Subtracting numbers </p>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							10 - 5 # Output: 5
+							0 - 10 # Output: -10
+						</code>	
+					</pre>
+				</section>
+				<section>
+					<h2>*</h2>
+					<p>Multiplying numbers </p>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							5 * 5 # Output: 25
+						</code>	
+					</pre>
+					<p>Multiplying numbers by a power</p>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							5 ** 2 # Equivalent to 5^2
+						</code>	
+					</pre>
+				</section>
+				<section>
+					<h2>/</h2>
+					<p>Dividing numbers </p>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							4 / 2 # Output: 2.0
+							7 / 2 # Output: 3.5
+							2 / 3 # Output: 0.6666666666666666
+						</code>	
+					</pre>
+				</section>
+
+				<section>
+					<h2>Questions</h2>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							x = 100
+							y = "Happy"
+							age = 10
+							z = 557
+
+							print(900 + x)
+							print("I am " + y)
+							print("I am " + y + " and I am " + str(age) + " years old today")
+							print(900 * z)
+							print(1000 / 557)
+						</code>	
+					</pre>
+				</section>
+			</section>
+
+			<!--page 3.5-->
+			<!-- <section>
+
+				<section>
+					<h2>Terminology</h2>
+					<p> Expression VS Statement </p>
+				</section>
+
+				<section>
+					<h2>Expression</h2>
+					<p>Combination of values, variables, operators and calls to function that always returns a result value</p>
+					<p>
+						Eligibility:
+						<br>
+						1. Must not change state and produces at least 1 value as a result
+						
+					</p>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							9
+							x = 5
+							y = 10
+							z = x + y
+						</code>	
+					</pre>
+				</section>
+
+				<section>
+					<h2>Statement</h2>
+					<p>Instructions that the python intrepreter can execute </p>
+					<pre data-id="code-animation">
+						<code data-trim data-line-numbers>
+							pi = 3.14
+						</code>	
+					</pre>
+				</section>
+				<section>
+					<h2>Summary</h2>
+					<p>
+						+
+						<br>
+						-
+						<br>
+						*
+						<br>
+						/
+					</p>
+				</section>
+			</section> -->
 			<!--page 4-->
 			<section>
 				<section>
 					<h2> if else</h2>
-					<p>Support the use of logical conditional statements </p>
+					<p>Supports the use of logical conditional statements </p>
 				</section>
 				<section>
 					<ul> Logical condition
-						<li>Equal: <span style="color:red;"> a == b </span> </li>
+						<li>Equal: <span style="color:red;"> a == b </span></li>
 						<li>Not Equal: <span style="color:red;"> a != b </span></li>
-						<li>Less than: <span style="color:red;"> a < b </span>
-						</li>
-						<li>Less Than or Equal To: <span style="color:red;"> a <= b </span>
-						</li>
-						<li>Greater than: <span style="color:red;"> a > b </span> </li>
+						<li>Less than: <span style="color:red;"> a < b </span></li> 
+						<li>Less Than or Equal To: <span style="color:red;"> a <= b </span></li>
+						<li>Greater than: <span style="color:red;"> a > b </span></li>
 						<li>Greater Than or Equal To: <span style="color:red;"> a >= b </span></li>
 					</ul>
 				</section>
 				<section>
-					<p>if: Checks if the first condition is true </p>
+					<p>if: The first condition to be checked</p>
 					<p>elif: If the previous condition were not true, try this condition </p>
 					<p>else: Anything that were not caught by the preceding conditions </p>
 				</section>
 				<section>
 					<h2>Example </h2>
 					<pre data-id="code-animation">
+
+						<code data-trim data-line-numbers>
+							if today == "Saturday":
+								print("No School")
+							elif today == "Sunday" or tomorrow == "Public Holiday":
+								print("No School")
+							else:
+								print("Going To School")
+							</code>
 						<p class="fragment fade-in-then-semi-out">
 							today = "Saturday"
 						</p>
@@ -179,15 +357,6 @@ Cover topics: class <->> objects
 						<p class="fragment fade-in-then-semi-out">
 							Output: "Going to School"
 						</p>
-						<code class="hljs" data-trim data-line-numbers>
-						if today == "Saturday":
-							print("No School")
-						elif today == "Sunday" or tomorrow == "Public Holiday":
-							print("No School")
-						else:
-							print("Going To School")
-						
-					</code>
 					</pre>
 				</section>
 			</section>
@@ -196,66 +365,150 @@ Cover topics: class <->> objects
 				<section>
 					<h2>List</h2>
 					<p>
-						Array can hold many values under a single varaible.
-						List are ordered and allow duplicate value
+						Array can hold many values under a single variable.
+						Lists are ordered and allow duplicate values
 					</p>
 				</section>
 				<section>
 					<h2>Example </h2>
-					<pre data-id="code-animation">
-						<p class="fragment fade-in-then-semi-out">
-							Output: "Ford"
-						</p>
-						<p class="fragment fade-in-then-semi-out">
-							Output: "Volvo"
-						</p>
-						<code class="hljs" data-line-numbers data-trim>
-							#declaring array
-							cars = ["Ford", "Volvo", "BMW"]
-							print(cars[0])
-						<code class="hljs" data-trim data-line-numbers>
-							#declaring List
-							thislist = ["apple", "banana", "cherry", "apple", "cherry"]
-							print(thislist[1])
-							print(thislist[-1])
-							print(thislist[2:4])
-							print(thislist[-2:-4])
+					
+					<div class="">
 
-							# Adding item to the list 
-							thislist.append("mango")
-							thislist.insert(1, "orange")
-
-							# Removing elements to the array
-							thislist.remove("cherry")
-							thislist.pop(1)
-						</code>
+						<pre data-id="code-animation">
+							<code class="hljs" data-line-numbers data-trim data-noescape>
+								#declaring List
+								thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+							</code>
 						</pre>
+						<div class="r-stack">
+							<pre data-id="code-animation" class="fragment fade-in-then-out">
+								<code  data-line-numbers data-trim>
+									print(thislist[0])
+									Output: "apple"
+								</code>
+								<br>
+								Question: What is the output of print(thislist[1])?
+							</pre>
+							<pre data-id="code-animation" class="fragment fade-in-then-out">
+								<code class="hljs " data-line-numbers data-trim>
+									print(thislist[-1])
+									Output: "cherry"
+								</code>
+								<br>
+								Question: What is the output of print(thislist[-4])?
+							</pre>
+							<pre data-id="code-animation" class="fragment fade-in-then-out">
+								<code class="hljs" data-line-numbers data-trim>
+									print(thislist[2:4])
+									Output: ["cherry", "apple"]
+									
+								</code>
+								<br>
+								Note: This is called index slicing and it gets the value at index 2 to 3 but it always excludes the last number
+								<br><br>
+								Question (Tricky): What is the output of print(thislist[2:2])?
+							</pre>
+							<div class="fragment fade-in-then-out">
+								<pre data-id="code-animation" >
+									<code class="hljs" style="max-width:100%;" data-line-numbers data-trim>
+										print(thislist[:-1])
+										Output: ["apple", "banana", "cherry", "apple"]
+									</code>
+									<br>
+									Note: [:-1] is equivalent to [0:-1], meaning to take every element in the list except for the last one. print(thislist[:]) would print out everything
+									<br><br>
+									Question (Hard): What is the output of print(thislist[-2:])?
+								</pre>
+							</div>
+							<div class="fragment fade-in-then-out">
+								<pre data-id="code-animation">
+									<code class="hljs " data-line-numbers data-trim>
+										thislist.append("mango")
+										thislist.insert(1, "orange")
+										thislist.remove("cherry")
+										thislist.pop(1)
+										print(thislist)
+										
+									</code>
+									<br>
+									After Insertion: ['apple', 'orange', 'banana', 'cherry', 'apple', 'cherry', 'mango']
+									<br><br>
+									After Deletion: ['apple', 'banana', 'apple', 'cherry', 'mango']
+									<br><br>
+									Note: Removed "banana" first, then the first instance of "cherry"
+								</pre>
+							</div>
+					</div>
+					</div>
 				</section>
 			</section>
 			<!--page 6-->
 			<section>
 				<section>
 					<h2>For Loop</h2>
-					<p>To iterating over a sequence that is either a list, dictionary or string </p>
+					<p>To iterate over a sequence that is either a list, dictionary or string </p>
 				</section>
-				<section>
-					<h2>Example</h2>
-					<pre data-id="code-animation">
-						<code class="hljs" data-trim data-line-numbers="1-2|4-5|8-9">
-							for x in range(3):
-								print (x) 
 
-							for x in range(2,6):
-								print(x)
+				<section>
+				<h2>Example 1</h2>
+					<pre>
+						<code data-trim data-line-numbers>
+
+							for i in range(3):
+								print(i) # Prints 0, 1 and 2
+
+							for i in range(2,6):
+								print(i) # Prints numbers 2 to 5
+
 
 							cars = ["Ford", "Volvo", "BMW"]
-							for x in cars:
-								print(x)
+							for car in cars:
+								print(car)
+
 						</code>
 					</pre>
 				</section>
+				<section>
+					<h2>Example 2</h2>
+					<pre data-id="code-animation">
+					<code class="hljs" data-trim data-line-numbers>
+						
+						# value from 1 to 11 but not including 11
+						# increment by 2 each time
+						for i in range(1,11,2):
+							print(i)
+							# 1,3,5,7,9
 
+						for i in range(5, 0, -1):
+							print(i) # Prints numbers 5 to 1
+					</code>
+					</pre>
+				</section>
+				<section>
+					<h2>Questions</h2>
+					<pre>
+						<code data-trim data-line-numbers>
+							# Question 1
+							for i in range(5):
+								print(i + 1)
+
+							# Question 2
+							for i in range(4):
+								print(i - 1)
+							
+							# Question 3
+							for i in range(1, 5):
+								print(i) 
+
+							# Question 4 (Hard)
+							for i in range(10, 0, -2):
+								print(i)
+						</code>
+					</pre>
+				</section>
 			</section>
+
+
 			<!-- page 7-->
 			<section>
 				<section>
@@ -290,10 +543,9 @@ Cover topics: class <->> objects
 				</section>
 				<section>
 					<h2>Example</h2>
-					<pre data-id="code-animation">
-						
-						<p class="fragment fade-in-then-semi-out" data-transition="zoom-in fade-out">
-							<code class="hljs" data-trim data-line-numbers>
+					<div class="r-stack">
+						<pre class="fragment fade-in-then-out" >
+							<code class="hljs" data-trim data-line-numbers>	
 								thisAppleProduct =	{
 									"brand": "Apple",
 									"type": "Macbook",
@@ -301,103 +553,130 @@ Cover topics: class <->> objects
 									"color": ["grey", "pink","light grey"]
 								}
 							</code>
-						</p>
-						<p class="fragment fade-in-then-semi-out" data-transition="zoom-in fade-out">
+						</pre>
+						<pre class="fragment fade-in-then-out" >
 							<code class="hljs" data-trim data-line-numbers>
 								thisAppleProduct =	{
 									"brand": "Apple",
-									"type": "Macbook",
-									"year": 9999
+									"type": "MacbookPro",
+									"year": 2015
 									"color": ["grey", "pink","light grey"]
 								}
 							</code>
-						</p>
+						</pre>
+						<pre class="fragment fade-in-then-out" >
+							<code class="hljs" data-trim data-line-numbers>
+								thisAppleProduct =	{
+									"brand": "Apple",
+									"type": "MacbookPro",
+									"color": ["grey", "pink","light grey"]
+								}
+							</code>
+						</pre>
+						<pre class="fragment fade-in-then-out" >
+							<code class="hljs" data-trim data-line-numbers>
+								thisAppleProduct =	{
+									"brand": "Apple",
+									"type": "MacbookPro",
+									"year": 2020,
+									"color": ["grey", "pink","light grey"]
+								}
+							</code>
+						</pre>
+					</div>
+					<pre data-id="code-animation">
+
 						<code class="hljs" data-trim data-line-numbers>
-							thisAppleProduct =	{
-								"brand": "Apple",
-								"type": "Macbook",
-								"year": 2015
-								"color": ["grey", "pink","light grey"]
-							}
 
 							thisAppleProduct["type"] = "MacbookPro" # changing the value of the key "type"
-
 							del thisAppleProduct["year"] # deleting the key & value of dictionary
-							
 							thisAppleProduct["year"] = 2020 # adding key & value to the dictionary
-						</code></pre>
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h2>Summary</h2>
+					<p>
+						Before colon: key
+						<br>
+						After colon: value
+						<br>
+						dictionary_name["key"] to access the value
+						<br>
+						dictionary_name.keys() to list all keys <br>
+						dictionary_name.values() to list all values 
+						
+					</p>
 				</section>
 			</section>
 			<!--page 8-->
 			<section>
 				<section>
 					<h2>Functions</h2>
-					<p>Block of code that runs only when called </p>
-					<p>Passes data, known as parameters into the function </p>
+					<p>Blocks of code that run only when called </p>
+					<p>Passes data, known as arguments into the function </p>
 					<p>Can return the result from the function</p>
 				</section>
 				<section>
-					<h2>Example 1:Basic Function</h2>
+					<h2>Example 1: Basic Function</h2>
 					<pre data-id="code-animation">
-					<code class="hljs" data-trim data-line-numbers="1-8|9-10" >
-						x = "parameter"
-						y = "arguments"
-
-						def my_function (arg1, arg2):
-							#refer to the arguments according to what you called it as in the parameters
-							print(arg1 + " is the same as " + y)
-						
-
-						#to invoke the function
-						my_function(x,y)
+						<code class="hljs" data-trim data-line-numbers="1-2|4" >
+						def greet(): 
+							print("Hello world")
+					
+						greet() # to invoke the function
 						</code>
-						</pre>
-
+					</pre>
 				</section>
 				<section>
-					<h2>Example 2:Scope</h2>
-					<pre data-id="code-animation">
-						<code class="hljs" data-trim data-line-numbers="|1-15|16-21" >
-							<script type="text/template">
-						number1 = 2
-						number2 = 3
-						total = 0
-
-						def sum(num1, num2):
-							total = num1 + num2
-
-						sum(number1, number2)	
-						print(total) # Is this 0 or 5?
-
-
-
-
-
-						
-						def sum(num1, num2):
-							total = num1 + num2	
-							return total	
-
-						sum(number1, number2)	
-						print(total)						
-							</script>	</code></pre>
+					<h2>Example 2: Function with Parameters</h2>
+					
+					<pre>
+						<code data-trim data-line-numbers="1-2|4-7|9-10">
+							x = "parameter"
+							y = "arguments"
+							
+							def my_function(arg, param):
+								print(arg + " is the same as " + param)
+								print(param + " is the same as " + arg)
+								print(arg + " and " + param + " are both variables")
+							
+							my_function(x, y)
+							my_function(y, x)
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h2>Example 3: Scope</h2>
+					<pre>
+						<code data-trim data-line-numbers>
+							number1 = 2
+							number2 = 3
+							total = 0
+	
+							def sum(num1, num2):
+								total = num1 + num2
+	
+							sum(number1, number2)	
+							print(total) # Is this 0 or 5?	
+						</code>
+					</pre>
 				</section>
 
 				<section>
-					<h2>Example 3:List as argument</h2>
-					<pre data-id="code-animation">
-						<code class="hljs" data-trim data-line-numbers="" >
+					<h2>Example 4: List as argument</h2>
 
+					<pre>
+						<code data-trim data-line-numbers>
 							mylist = ["chocolate", "apple", "soda"]
 
 							def shopping(grocerylist):
-								for x in grocerylist:
-									print(X)	
+								for item in grocerylist:
+									print("Bought: " + x)	
 							
 							shopping(mylist)
 						</code>
-
-							</pre>
+					</pre>
 				</section>
 			</section>
 			<!--page 9-->
@@ -405,84 +684,99 @@ Cover topics: class <->> objects
 				<section>
 					<h2>Class</h2>
 					<p>
-						Class is an Object Constructor <br>
+						Class is an object constructor <br>
 						"Blueprint" for creating object.<br>
 					</p>
 					<p>
-						Class can be understood as a Template
-						<br>
-						Copying from friend's homework
+						Classes can be understood as a Template
 					</p>
 				</section>
 
 				<section>
 					<h2>Object</h2>
 					<p>
-						Object is whatever that haven been created based on Class.
+						An object is a mass-produced copy based on a class blueprint
 					</p>
-					<p>
-						your homework that is copied from your friend.
-					</p>
+
 				</section>
 
 				<section>
-					<h2>Example1</h2>
+					<h2>Example 1</h2>
 					<pre data-id="code-animation">
 						<code class ="hljs" data-trim data-line-numbers="">
-							#defining a class
 							class Human:
-								eye = 2,
+								eyes = 2
 								hair = "black"
 							
 							#creating the object
 							Adam = Human()
 
-							#hair is known as property
-							print(Adam.hair) #return black
+							# hair is a property
+							print(Adam.hair) # returns black
 
 							#changing the property value 
 							Adam.hair = "blonde"
-							print(Adam.hair) #return blonde
+							print(Adam.hair) # returns blonde
 						</code>
 					</pre>
 				</section>
 				<section>
-					<h2>Example2</h2>
+					<h2>Example 2</h2>
 					<pre data-id="code-animation">
-						<code class ="hljs" data-trim data-line-numbers="3-5">
+						<code class ="hljs" data-trim data-line-numbers="">
 							class Human:
 								#assign value for name and age accordingly
-								def __init__(self, name, age):
-								self.name = name
-								self.age = age
+								def __init__(self, name, age): # every class function always has 1 default parameter: self, which is the class itself. You can use it to reference the class's variables
+									self.name = name
+									self.age = age
 							
 							person = Human("John",21)
 							print(person.name)
-							</code>
+						</code>
 					</pre>
 				</section>
 
 				<section>
-					<h2>Example3</h2>
+					<h2>Example 3</h2>
 					<pre data-id="code-animation">
-						<code class ="hljs" data-trim data-line-numbers="7-8,10">
+						<code class ="hljs" data-trim data-line-numbers="">
 							class Human:
 								#assign value for name and age accordingly
 								def __init__(self, name, age):
-								self.name = name
-								self.age = age
+									self.name = name
+									self.age = age
 
-								def Greetings():
+								def greetings(self): 
 									print("hello there")
 							
 							person = Human()
-							person.Greetings()
+							person.greetings()
 
 						</code>
 					</pre>
 				</section>
 
 			</section>
+			<!--page 10. Module-->
+			<section>
+				<section>
+					<h2>Module</h2>
+					<p>
+						Python has some built-in modules, one of them being "random". This module can be used to generate
+						random numbers
+					</p>
+					<pre data-id="code-animation">
+						<code class="hljs" data-trim data-line-numbers>
+							#importing the module into the file
+							import random
+							#return a number from 0 to 9, including the numbers 0 and 9
+							print(random.randint(0,9))
+
+						</code>
+					</pre>
+				</section>
+			</section>
+
 		</div>
 	</div>
 
@@ -490,6 +784,7 @@ Cover topics: class <->> objects
 	<script src="reveal.js@810d80b/plugin/notes/notes.js"></script>
 	<script src="reveal.js@810d80b/plugin/markdown/markdown.js"></script>
 	<script src="reveal.js@810d80b/plugin/highlight/highlight.js"></script>
+	
 	<script>
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/

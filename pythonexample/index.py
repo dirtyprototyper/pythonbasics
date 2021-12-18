@@ -162,3 +162,54 @@ class Human:
 person = Human()
 person.Greetings()
 
+
+apple = 3
+orange = 5
+total = 0
+
+def price(x,y):
+    sum = x + y
+    print(total)
+
+price(apple, orange)
+
+apple = 3
+orange = 5
+
+def discount(price):
+    after_discount = price - 2
+    print(after_discount)
+
+def totalprice(x,y):
+    z = x + y
+    print(z)
+    final = discount(z)
+
+totalprice(apple,orange)
+
+apple = 3
+orange = 5
+
+def totalprice(x,y):
+    z = x + y
+    print(z)
+    final = discount(z)
+
+def discount(price):
+    after_discount = price - 2
+    print(after_discount)
+
+
+totalprice(apple,orange)
+
+name = "Eddie"
+age = 42
+
+print(name + "is" + str(age) + "years old today")
+
+for i in range(10, 0, -2):
+    print(i)
+
+import random
+
+random.randint(0, 5)
